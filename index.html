@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>On Troca de Óleo | São Bernardo do Campo</title>
+<meta name="description" content="Troca de óleo de motor e de câmbio, filtros e mais, na Av. Senador Vergueiro, em São Bernardo do Campo. Agende pelo WhatsApp.">
+<meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050505;--surface:#0f0f11;--line:#26262a;--text:#f4f4f2;--muted:#a3a39e;--gold:#f0b010;--steel:#c4c7cc;--metal:linear-gradient(135deg,#f8e58a,#f0b010 45%,#a8770a);
+--display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;--body:"Barlow",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+box-sizing:border-box;color-scheme:dark;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:5rem;scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.6 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:3px solid #f8e58a;outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 1.25rem;position:relative}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:.98;margin:0;letter-spacing:.01em}
+.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:.6rem;padding:.95rem 1.6rem;border-radius:999px;font-weight:600;text-decoration:none;border:1.5px solid rgba(240,176,16,.7);transition:transform .2s,box-shadow .2s}
+.btn.primary{background:var(--metal);color:#111;border-color:transparent;box-shadow:0 8px 30px rgba(240,176,16,.25)}
+.btn.primary::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 35%,rgba(255,255,255,.55) 50%,transparent 65%);transform:translateX(-120%);transition:transform .7s}
+.btn:hover{transform:translateY(-2px)}.btn.primary:hover{box-shadow:0 12px 40px rgba(240,176,16,.45)}.btn.primary:hover::after{transform:translateX(120%)}
+.btn:active{transform:scale(.97)}.btn.sm{padding:.55rem 1.1rem}
+.btn svg{width:1.2rem;height:1.2rem;fill:currentColor;transition:transform .25s}.btn:hover svg{transform:rotate(-10deg) scale(1.15)}
+header{position:fixed;top:0;left:0;right:0;z-index:20;padding-top:env(safe-area-inset-top,0px);background:linear-gradient(#000c,#0000);backdrop-filter:blur(6px)}
+.bar{display:flex;align-items:center;justify-content:space-between;padding:.5rem 0}
+.bar img{width:54px;height:54px;display:block;border-radius:50%}
+.bar nav{display:flex;align-items:center;gap:1.6rem;font-weight:500}
+.bar nav a:not(.btn){text-decoration:none;color:var(--steel);transition:color .2s}.bar nav a:not(.btn):hover{color:var(--gold)}
+.hero{position:relative;min-height:100svh;display:grid;align-items:center;overflow:hidden;background:radial-gradient(ellipse at 70% 40%,#1c1608,#050505 65%)}
+.stage{position:absolute;inset:0}
+#gl{position:absolute;inset:0;width:100%;height:100%;opacity:0;transition:opacity 1.2s}#gl.on{opacity:1}
+.fb{position:absolute;right:4%;top:50%;width:min(52vw,640px);transform:translateY(-50%)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#050505 0%,#050505cc 28%,#0000 62%),linear-gradient(0deg,#050505,#0000 25%);pointer-events:none}
+.copy{position:relative;z-index:2;padding:7rem 0 5rem;max-width:560px}
+.copy>*{animation:up .9s cubic-bezier(.2,.8,.2,1) both}.copy>:nth-child(2){animation-delay:.12s}.copy>:nth-child(3){animation-delay:.24s}
+@keyframes up{from{opacity:0;transform:translateY(28px)}}
+.brand{font-family:var(--display);font-size:1.4rem;color:var(--gold);margin:0 0 1rem;letter-spacing:.06em}
+.copy h1{font-size:clamp(3.4rem,9vw,6.4rem);background:linear-gradient(180deg,#fff,#b8bbc0);-webkit-background-clip:text;background-clip:text;color:transparent}
+.copy p{color:var(--muted);font-size:1.2rem;margin:1.3rem 0 2rem}
+.cta{display:flex;flex-wrap:wrap;gap:.8rem}
+.lift{animation:lf 4.4s ease-in-out infinite alternate}.arms{transform-box:fill-box;transform-origin:50% 100%;animation:ar 4.4s ease-in-out infinite alternate}
+@keyframes lf{to{transform:translateY(-75px)}}@keyframes ar{to{transform:scaleY(2.3)}}
+section{position:relative;padding:5.5rem 0}
+section h2{font-size:clamp(2.4rem,6vw,3.8rem);margin-bottom:.7rem;background:linear-gradient(180deg,#fff,#a9acb2);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--muted);max-width:36rem;margin:0 0 2.6rem}
+.orb{position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(#f0b01026,#0000 70%);pointer-events:none}
+.rv{opacity:0;transform:translateY(34px);transition:opacity .8s,transform .8s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}
+.cards{display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fit,minmax(245px,1fr))}
+.card{position:relative;overflow:hidden;background:linear-gradient(160deg,#17171a,#0b0b0c);border:1px solid var(--line);border-radius:14px;padding:1.8rem 1.5rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;transition:transform .35s,border-color .3s,opacity .8s;transform-style:preserve-3d}
+.card::before{content:"";position:absolute;inset:0;background:radial-gradient(260px circle at var(--mx,50%) var(--my,0%),#f0b0202e,#0000 70%);opacity:0;transition:opacity .3s}.card:hover{border-color:#f0b01088}.card:hover::before{opacity:1}
+.card svg.ic{width:3rem;height:3rem;stroke:var(--gold);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;margin-bottom:.6rem;transition:transform .5s;transform-box:fill-box;transform-origin:center}
+.card:hover svg.ic{transform:rotate(90deg) scale(1.1)}.card.d:hover svg.ic{transform:translateY(-4px) scale(1.12)}
+.card h3{font-size:1.8rem}.card p{margin:0 0 1rem;color:var(--muted);font-size:1rem;flex:1}
+.card a{position:relative;color:var(--gold);font-weight:600;text-decoration:none}.card a::after{content:" ›";transition:margin .2s}.card a:hover::after{margin-left:.35rem}
+.tgrid{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}.tgrid>div{border-left:2px solid var(--gold);padding-left:1.1rem}
+.tgrid h3{font-size:1.5rem;margin-bottom:.4rem}.tgrid p{margin:0;color:var(--muted)}
+.where{background:#0a0a0b;border-block:1px solid var(--line)}
+.wgrid{display:grid;gap:3rem;grid-template-columns:1fr 1fr;align-items:center}
+.map{width:100%;height:auto;border:1px solid var(--line);border-radius:14px;display:block}
+.where dl{margin:1.6rem 0 1.8rem}.where dt{font-family:var(--display);font-size:1.3rem;color:var(--gold);margin-top:1rem}.where dd{margin:.1rem 0 0}
+.final{text-align:center;background:radial-gradient(ellipse at 50% 100%,#f0b01022,#0000 70%)}.final h2{margin-inline:auto}.final .lead{margin-inline:auto}.final .cta{justify-content:center}
+footer{padding:1.6rem 0 2rem;color:var(--muted);font-size:.95rem;border-top:1px solid var(--line)}.fl{display:flex;flex-wrap:wrap;gap:.6rem 1.5rem;justify-content:space-between}
+footer a{text-underline-offset:3px}
+.fab{position:fixed;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:19;display:none;box-shadow:0 6px 28px #000a}
+@media(max-width:820px){.bar nav a:not(.btn){display:none}.wgrid{grid-template-columns:minmax(0,1fr)}.hero{display:block}.stage{position:relative;height:54svh;min-height:330px}.fb{right:50%;transform:translate(50%,-50%);width:92vw}.hero::after{background:linear-gradient(0deg,#050505 0%,#0000 30%)}.copy{padding:1rem 0 4rem}.fab{display:inline-flex}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}.rv{opacity:1;transform:none}.lift{transform:translateY(-40px)}.arms{transform:scaleY(1.7)}}
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+<a href="#topo" aria-label="On Troca de Óleo, início"><img src="data:image/jpeg;base64,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" alt="On Troca de Óleo" width="54" height="54"></a>
+<nav aria-label="Principal"><a href="#servicos">Serviços</a><a href="#cuidados">Cuidados</a><a href="#como-chegar">Como chegar</a><a href="https://instagram.com/ontrocadeoleo" target="_blank" rel="noopener">Instagram</a>
+<a class="btn primary sm" href="https://wa.me/5511925717723?text=Ol%C3%A1!%20Quero%20agendar%20uma%20troca%20de%20%C3%B3leo." target="_blank" rel="noopener">Agendar</a></nav>
+</div></header>
+<main id="topo">
+<div class="hero">
+<div class="stage" aria-hidden="true">
+<svg class="fb" viewBox="0 0 520 360"><defs><linearGradient id="gd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a2a30"/><stop offset="1" stop-color="#0c0c0e"/></linearGradient></defs>
+<ellipse cx="260" cy="335" rx="200" ry="12" fill="#f0b010" fill-opacity=".18"/>
+<g class="arms"><path d="M170 322L350 268M350 322L170 268" stroke="#f0b010" stroke-width="7" vector-effect="non-scaling-stroke"/></g><rect x="130" y="322" width="260" height="8" rx="3" fill="#3a3a40"/>
+<g class="lift"><rect x="150" y="264" width="220" height="7" rx="3" fill="#8a8d94"/><path d="M80 250L70 232Q68 205 100 200L190 192L245 150Q262 138 300 138L350 138Q385 142 405 195L440 202Q462 210 460 232L450 250Z" fill="url(#gd)" stroke="#f0b010" stroke-opacity=".5"/><path d="M205 190L252 154Q265 146 295 146L330 146L330 190ZM340 146Q368 150 385 190L340 190Z" fill="#06090d" stroke="#c4c7cc" stroke-opacity=".3"/>
+<g fill="#0a0a0a" stroke="#f0b010" stroke-width="5"><circle cx="150" cy="250" r="29"/><circle cx="385" cy="250" r="29"/></g><g fill="#c4c7cc"><circle cx="150" cy="250" r="8"/><circle cx="385" cy="250" r="8"/></g></g></svg>
+<canvas id="gl"></canvas></div>
+<div class="wrap"><div class="copy" data-p=".1">
+<p class="brand">ON TROCA DE ÓLEO</p>
+<h1>Seu motor em outro nível.</h1>
+<div><p>Troca de óleo de motor, óleo de câmbio, filtros e mais, na Av. Senador Vergueiro, em São Bernardo do Campo.</p>
+<div class="cta"><a class="btn primary" href="https://wa.me/5511925717723?text=Ol%C3%A1!%20Quero%20agendar%20uma%20troca%20de%20%C3%B3leo." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.600 15.100L2 22l5-1.300A10 10 0 1 0 12 2Zm5.800 14.200c-.2.700-1.400 1.300-2 1.400-.5.100-1.200.100-1.900-.1-.4-.1-1-.3-1.700-.6-3-1.300-4.900-4.300-5.100-4.500-.1-.2-1.200-1.600-1.200-3s.8-2.100 1-2.400c.3-.3.600-.3.800-.3h.6c.2 0 .4 0 .6.500l.8 2c.1.200.1.400 0 .5l-.4.600-.4.400c-.1.200-.3.300-.1.600.2.300.7 1.200 1.500 1.900 1 .9 1.900 1.200 2.200 1.300.3.100.4.100.6-.1l.9-1c.2-.3.400-.2.600-.1l1.900.9c.3.100.5.200.5.300.1.100.1.700-.1 1.400Z"/></svg>Agendar pelo WhatsApp</a>
+<a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=-23.6596207,-46.5665965" target="_blank" rel="noopener">Como chegar</a></div></div>
+</div></div></div>
+
+<section id="servicos"><div class="orb" data-p="-.06" style="right:-120px;top:0"></div><div class="wrap">
+<h2 class="rv">Serviços</h2><p class="lead rv">Do óleo do motor ao câmbio, cuidamos do que mantém seu carro rodando bem.</p>
+<div class="cards">
+<div class="card d rv" style="--d:0s"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3s6 6.500 6 11a6 6 0 0 1-12 0c0-4.500 6-11 6-11z"/></svg><h3>Óleo de motor</h3><p>Troca com o óleo indicado para o seu veículo.</p><a href="https://wa.me/5511925717723?text=Ol%C3%A1!%20Quero%20agendar%20a%20troca%20de%20%C3%B3leo%20de%20motor." target="_blank" rel="noopener">Agendar</a></div>
+<div class="card rv" style="--d:.1s"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></svg><h3>Óleo de câmbio</h3><p>Fluido novo para trocas de marcha mais suaves.</p><a href="https://wa.me/5511925717723?text=Ol%C3%A1!%20Quero%20agendar%20a%20troca%20de%20%C3%B3leo%20de%20c%C3%A2mbio." target="_blank" rel="noopener">Agendar</a></div>
+<div class="card rv" style="--d:.2s"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="4" width="12" height="16" rx="2"/><path d="M6 9h12M6 15h12"/></svg><h3>Filtros</h3><p>Troca dos filtros na mesma visita, junto com o óleo.</p><a href="https://wa.me/5511925717723?text=Ol%C3%A1!%20Quero%20agendar%20a%20troca%20de%20filtros." target="_blank" rel="noopener">Agendar</a></div>
+<div class="card rv" style="--d:.3s"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.700 6.300a4 4 0 0 0-5.400 5.400L3 18l3 3 6.300-6.300a4 4 0 0 0 5.400-5.400l-2.600 2.600-2.400-.6-.6-2.400z"/></svg><h3>E mais</h3><p>Pergunte se atendemos o que o seu carro precisa.</p><a href="https://wa.me/5511925717723?text=Ol%C3%A1!%20Quais%20outros%20servi%C3%A7os%20voc%C3%AAs%20oferecem%3F" target="_blank" rel="noopener">Perguntar</a></div>
+</div></div></section>
+
+<section id="cuidados"><div class="wrap">
+<h2 class="rv">Quando trocar o óleo</h2><p class="lead rv">O prazo certo está no manual do seu carro. Estas dicas ajudam a não passar do ponto.</p>
+<div class="tgrid">
+<div class="rv"><h3>Siga o manual</h3><p>Cada fabricante define o intervalo por quilometragem ou tempo, o que vier primeiro.</p></div>
+<div class="rv" style="--d:.1s"><h3>Uso pesado encurta o prazo</h3><p>Trânsito parado, trajetos curtos e carga pedem trocas mais frequentes.</p></div>
+<div class="rv" style="--d:.2s"><h3>Na dúvida, pergunte</h3><p>Mande o modelo e o ano do carro pelo WhatsApp e indicamos o óleo.</p></div>
+</div></div></section>
+
+<section id="como-chegar" class="where"><div class="wrap wgrid">
+<svg class="map rv" viewBox="0 0 480 360" role="img" aria-label="Ilustração do mapa com a localização na Av. Senador Vergueiro">
+<rect width="480" height="360" fill="#0c0c0d"/><g stroke="#232327" stroke-width="14" fill="none" stroke-linecap="round"><path d="M0 70H480M0 290H480M90 0V360M390 0V360M240 0V150"/></g>
+<path d="M-10 330L490 40" stroke="#f0b010" stroke-width="22" fill="none" stroke-linecap="round"/>
+<text x="40" y="262" fill="#a3a39e" font-family="Arial,sans-serif" font-size="15" transform="rotate(-30 40 262)">Av. Senador Vergueiro</text>
+<g transform="translate(240 150)"><path d="M0 0C0 0-30-40-30-62a30 30 0 0 1 60 0C30-40 0 0 0 0Z" fill="#f4f4f2" stroke="#000" stroke-width="3"/><circle cy="-62" r="11" fill="#000"/></g></svg>
+<div class="rv" style="--d:.1s"><h2>Como chegar</h2>
+<dl><dt>Endereço</dt><dd>Av. Senador Vergueiro, São Bernardo do Campo, SP</dd>
+<dt>WhatsApp e telefone</dt><dd><a href="tel:+5511925717723">(11) 92571-7723</a></dd>
+<dt>Instagram</dt><dd><a href="https://instagram.com/ontrocadeoleo" target="_blank" rel="noopener">@ontrocadeoleo</a></dd></dl>
+<div class="cta"><a class="btn primary" href="https://www.google.com/maps/dir/?api=1&destination=-23.6596207,-46.5665965" target="_blank" rel="noopener">Rota no Google Maps</a>
+<a class="btn" href="https://waze.com/ul?ll=-23.6596207,-46.5665965&navigate=yes" target="_blank" rel="noopener">Rota no Waze</a></div></div>
+</div></section>
+
+<section class="final"><div class="wrap"><h2 class="rv">Agende sua troca de óleo.</h2><p class="lead rv">Chame no WhatsApp, diga o modelo do carro e combine o melhor horário.</p>
+<div class="cta rv"><a class="btn primary" href="https://wa.me/5511925717723?text=Ol%C3%A1!%20Quero%20agendar%20uma%20troca%20de%20%C3%B3leo." target="_blank" rel="noopener">Agendar pelo WhatsApp</a><a class="btn" href="https://instagram.com/ontrocadeoleo" target="_blank" rel="noopener">Seguir no Instagram</a></div></div></section>
+</main>
+<footer><div class="wrap fl"><span>© 2026 On Troca de Óleo. São Bernardo do Campo, SP.</span><span><a href="tel:+5511925717723">(11) 92571-7723</a> · <a href="https://instagram.com/ontrocadeoleo" target="_blank" rel="noopener">@ontrocadeoleo</a></span></div></footer>
+<a class="btn primary fab" href="https://wa.me/5511925717723?text=Ol%C3%A1!%20Quero%20agendar%20uma%20troca%20de%20%C3%B3leo." target="_blank" rel="noopener">Agendar</a>
+<script>
+(()=>{
+const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const weak=(navigator.hardwareConcurrency||4)<=2||(navigator.deviceMemory||4)<=2;
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+$$('.rv').forEach(el=>io.observe(el));
+$$('.card').forEach(c=>{
+ c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
+  c.style.setProperty('--mx',x*100+'%');c.style.setProperty('--my',y*100+'%');
+  if(!reduce&&c.classList.contains('in'))c.style.transform='perspective(800px) rotateX('+(.5-y)*8+'deg) rotateY('+(x-.5)*8+'deg) translateY(-4px)'});
+ c.addEventListener('pointerleave',()=>{c.style.transform=''});
+});
+if(!reduce){const px=$$('[data-p]');addEventListener('scroll',()=>{const y=scrollY;px.forEach(el=>{el.style.transform='translate3d(0,'+(y*el.dataset.p)+'px,0)'})},{passive:true})}
+function init3D(){
+ const T=window.THREE,cv=$('#gl');let r;
+ try{r=new T.WebGLRenderer({canvas:cv,antialias:true,alpha:true})}catch(e){return}
+ if(!r.getContext())return;
+ r.setPixelRatio(Math.min(devicePixelRatio||1,innerWidth<820?1.5:2));
+ r.outputEncoding=T.sRGBEncoding;r.toneMapping=T.ACESFilmicToneMapping;r.toneMappingExposure=1.15;
+ const sc=new T.Scene(),cam=new T.PerspectiveCamera(32,1,.1,80),rig=new T.Group();sc.add(rig);sc.fog=new T.Fog(0x050505,12,28);
+ const es=new T.Scene(),em=new T.MeshBasicMaterial();em.color.setRGB(5,5,5);
+ [[-6,6,-2],[0,7,2],[6,6,-2],[0,7,-5]].forEach(p=>{const b=new T.Mesh(new T.BoxGeometry(8,.2,1.2),em);b.position.set(p[0],p[1],p[2]);es.add(b)});
+ const gm=new T.MeshBasicMaterial();gm.color.setRGB(3,2,.3);const gp=new T.Mesh(new T.BoxGeometry(.4,6,8),gm);gp.position.set(-9,2,0);es.add(gp);
+ const pm=new T.PMREMGenerator(r);sc.environment=pm.fromScene(es,.04).texture;
+ const M=(c,m,ro)=>new T.MeshStandardMaterial({color:c,metalness:m,roughness:ro});
+ const dark=M(0x202024,.8,.4),gold=M(0xf0b010,1,.3),glass=M(0x05080c,1,.05);
+ const body=new T.MeshPhysicalMaterial({color:0x1a1b20,metalness:.9,roughness:.2,clearcoat:1,clearcoatRoughness:.05});
+ const add=(g,m,x,y,z,p)=>{const o=new T.Mesh(g,m);o.position.set(x,y,z);(p||rig).add(o);return o};
+ const B=(w,h,d)=>new T.BoxGeometry(w,h,d);
+ const fl=new T.Mesh(new T.PlaneGeometry(60,60),M(0x0a0a0b,.7,.3));fl.rotation.x=-Math.PI/2;sc.add(fl);
+ const ring=new T.Mesh(new T.RingGeometry(3.1,3.16,80),new T.MeshBasicMaterial({color:0xf0b010}));ring.rotation.x=-Math.PI/2;ring.position.y=.01;rig.add(ring);
+ const cn=document.createElement('canvas');cn.width=cn.height=128;const cx=cn.getContext('2d'),gr=cx.createRadialGradient(64,64,0,64,64,64);gr.addColorStop(0,'rgba(0,0,0,.85)');gr.addColorStop(1,'rgba(0,0,0,0)');cx.fillStyle=gr;cx.fillRect(0,0,128,128);
+ const sh=new T.Mesh(new T.PlaneGeometry(6.5,3.6),new T.MeshBasicMaterial({map:new T.CanvasTexture(cn),transparent:true,depthWrite:false}));sh.rotation.x=-Math.PI/2;sh.position.y=.02;rig.add(sh);
+ const lt=new T.TextureLoader().load($('.bar img').src);lt.encoding=T.sRGBEncoding;
+ add(new T.PlaneGeometry(4.4,4.4),new T.MeshBasicMaterial({map:lt,toneMapped:false,fog:false}),0,3.1,-5.5);
+ const gs=new T.MeshBasicMaterial({color:0xf0b010,fog:false});add(B(16,.07,.07),gs,0,5.6,-5.4);add(B(16,.07,.07),gs,0,.7,-5.4);
+ add(B(3.1,.1,.5),dark,0,.05,0);
+ const arms=[],ls=[-.5,.5];
+ ls.forEach(z=>{[1,-1].forEach(s=>{const a=add(B(2.1,.12,.14),dark,0,1,z*.9);a.userData.s=s;arms.push(a)})});
+ const cyl=add(B(.22,1,.22),gold,0,.6,0);
+ const rails=ls.map(z=>add(B(3.2,.1,.2),dark,0,1,z*1.1));
+ const car=new T.Group();rig.add(car);
+ const ex=(s,d,b)=>{const g=new T.ExtrudeGeometry(s,{depth:d,bevelEnabled:true,bevelThickness:b,bevelSize:b,bevelSegments:4,curveSegments:10});g.translate(0,0,-d/2);return g};
+ let s=new T.Shape();s.moveTo(-2.1,.32);s.lineTo(-2.2,.38);s.lineTo(-2.22,.7);s.quadraticCurveTo(-2.2,.9,-1.9,.92);s.lineTo(.7,.95);s.quadraticCurveTo(1.7,.93,2.1,.72);s.quadraticCurveTo(2.25,.6,2.22,.42);s.lineTo(2.1,.32);s.lineTo(-2.1,.32);
+ add(ex(s,1.7,.06),body,0,0,0,car);
+ s=new T.Shape();s.moveTo(-1.45,.9);s.quadraticCurveTo(-1,1.38,-.35,1.4);s.lineTo(.35,1.4);s.quadraticCurveTo(.75,1.38,1,.92);
+ add(ex(s,1.5,.05),body,0,0,0,car);
+ s=new T.Shape();s.moveTo(-1.28,.95);s.quadraticCurveTo(-.95,1.31,-.4,1.33);s.lineTo(.35,1.33);s.quadraticCurveTo(.65,1.3,.88,.95);
+ add(ex(s,1.66,.02),glass,0,0,0,car);
+ const tire=M(0x0b0b0b,.2,.8),rim=M(0xc4c7cc,1,.25);
+ [[-1.35,.8],[-1.35,-.8],[1.35,.8],[1.35,-.8]].forEach(p=>{
+  const t=add(new T.CylinderGeometry(.36,.36,.28,28),tire,p[0],.36,p[1],car);t.rotation.x=Math.PI/2;
+  const q=add(new T.CylinderGeometry(.22,.22,.3,20),rim,p[0],.36,p[1],car);q.rotation.x=Math.PI/2;
+  const g=add(new T.CylinderGeometry(.07,.07,.32,12),gold,p[0],.36,p[1],car);g.rotation.x=Math.PI/2});
+ const hl=new T.MeshBasicMaterial({color:0xfff2cc}),tl=new T.MeshBasicMaterial({color:0xff2a1a});
+ [-.55,.55].forEach(z=>{add(B(.1,.1,.4),hl,2.24,.7,z,car);add(B(.1,.1,.4),tl,-2.24,.72,z,car)});
+ const glow=new T.PointLight(0xf0b010,1.2,6);glow.position.set(0,.2,0);car.add(glow);
+ const key=new T.SpotLight(0xffe2a8,2.4,40,.6,.5);key.position.set(3,10,5);sc.add(key);
+ const rimL=new T.DirectionalLight(0x88aaff,.7);rimL.position.set(-5,4,-5);sc.add(rimL);sc.add(new T.AmbientLight(0xffffff,.15));
+ const tgt=new T.Vector3(0,1.7,0);let D=11,mx=0,my=0,sx=0,sy=0,vis=true;
+ function rs(){const w=cv.clientWidth||1,h=cv.clientHeight||1,a=w/h;r.setSize(w,h,false);cam.aspect=a;
+  D=a>1.2?11:Math.min(26,6.8/(.5735*a));rig.position.x=a>1.2?1.9:0;sc.fog.near=D+1;sc.fog.far=D+17;cam.updateProjectionMatrix()}
+ rs();addEventListener('resize',rs);
+ addEventListener('pointermove',e=>{mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5},{passive:true});
+ new IntersectionObserver(e=>{vis=e[0].isIntersecting}).observe(cv);
+ const L=2.1,hb=.1;
+ function loop(now){requestAnimationFrame(loop);if(!vis||document.hidden)return;
+  const t=now/1000,p=(Math.sin(t*.55-1.2)+1)/2,h=.45+1.55*p*p*(3-2*p),th=Math.asin((h-hb)/L);
+  arms.forEach(a=>{a.rotation.z=th*a.userData.s;a.position.y=(h+hb)/2});
+  rails.forEach(a=>{a.position.y=h});cyl.scale.y=h-.1;cyl.position.y=(h+hb)/2;car.position.y=h-.25;
+  sx+=(mx-sx)*.05;sy+=(my-sy)*.05;const az=.55+sx*.25+Math.sin(t*.2)*.04,el=.12-sy*.08;
+  cam.position.set(tgt.x+D*Math.sin(az)*Math.cos(el),tgt.y+D*Math.sin(el),tgt.z+D*Math.cos(az)*Math.cos(el));cam.lookAt(tgt);
+  r.render(sc,cam)}
+ requestAnimationFrame(loop);
+ cv.classList.add('on');$('.fb').style.display='none';
+}
+if(!reduce&&!weak){const sct=document.createElement('script');sct.src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';sct.onload=()=>{try{init3D()}catch(e){}};document.head.appendChild(sct)}
+})();
+</script>
+</body>
+</html>
